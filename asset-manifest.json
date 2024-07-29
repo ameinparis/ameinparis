@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ameinparis/static/css/main.f855e6bc.css",
+    "main.js": "/ameinparis/static/js/main.37cfe8f9.js",
+    "static/js/453.90f837a3.chunk.js": "/ameinparis/static/js/453.90f837a3.chunk.js",
+    "index.html": "/ameinparis/index.html",
+    "main.f855e6bc.css.map": "/ameinparis/static/css/main.f855e6bc.css.map",
+    "main.37cfe8f9.js.map": "/ameinparis/static/js/main.37cfe8f9.js.map",
+    "453.90f837a3.chunk.js.map": "/ameinparis/static/js/453.90f837a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.37cfe8f9.js"
+  ]
+}
