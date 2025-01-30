@@ -1,0 +1,104 @@
+
+* {
+  font-family: 'Century Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url('../../public/assets/images/back.jpg');  
+  background-size: cover; 
+  background-position: center; 
+  width: 100%;
+  height: 100vh;  
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  color: white;             
+}
+
+.glass-card {
+  position: absolute;
+  top: 220px;  /* Adjust for placement */
+  right: 20px; /* Adjust for placement */
+  width: 400px; /* Adjust width */
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  backdrop-filter: blur(10px); /* Glass blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.2); /* Glow effect */
+  color: white;
+  text-align: left;
+}
+
+.glass-card h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  /* font-family: 'Catchy Mager', sans-serif;  */
+  letter-spacing: 0.10em;
+}
+
+.glass-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  /* font-family: 'Catchy Mager', sans-serif;  */
+
+}
+
+
+.buttons {
+  position: absolute;
+  top: 80%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  background-color: transparent;
+  border: none; /* No border */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 12%;
+  position: relative; /* Needed for positioning the arrow */
+  display: inline-flex; /* To align the arrow icon next to the text */
+  align-items: center; /* Vertically align the arrow */
+}
+
+.btn::before {
+  content: '→'; /* Arrow icon (you can change this symbol) */
+  font-size: 1.5rem;
+  margin-left: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for growing arrow */
+}
+
+.btn:hover {
+  color: #333;
+}
+
+.btn:hover::before {
+  transform: scale(1.2); /* Grow the arrow on hover */
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.btn:hover::after {
+  transform: scaleX(1); /* Underline effect on hover */
+}

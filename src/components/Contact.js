@@ -1,13 +1,13 @@
 import React from "react";
 
-const About =()=> {
+const Contact =()=> {
 
     return(
         <div>
-hey
+
         </div>
     )
 
 };
 
-export default About;
+export default Contact;
